@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocho Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = "images/logo_tocho.png" type = "image/x-icon">
+</head>
+<body>
+    <div class="upper-bar-background">
+        <div class="container">
+            <div class="navbar">
+                <img onclick="tochoIncBarIconAction()" class="tocho-inc-icon" type="button" src="images/logo_tocho_bar_icon.png"></img>
+                <nav>
+                    <ul id="menu-list">
+                        <li><a href="../" class="bar-blog-button">Blog</a></li>
+                        <li><a href="/juegos/" class="bar-juegos-button">Juegos</a></li>
+                        <li><a href="" class="bar-nosotros-button">Nosotros</a></li>
+                        <li><a href="" class="bar-otros-button">Otros</a></li>
+                    </ul>
+                </nav>
+                <img onclick="toggleMenu()" class="menu-icon" type="button" src="images/menu-bar-icon.png">
+            </div>
+            <div class="row-2">
+                <div class="col-4">
+                    <img src="images/juego2_photo.png" class="blog2_photo">
+                    <div class="color-box"></div>
+                </div>
+                <div class="col-3">
+                    <h2>Pesca Tocha</h2>
+                    <p>El juego de pesca aclamado por los críticos.<br><br>Programado en HTML, JavaScript, CSS y C++<br>Por: Carlos Zamora, Guillermo Ortiz, Kevin Rodriguez y Mauricio Alcántar</p>
+                    <h3>5/30/2023</h3>
+                    <h4 onclick="playPescaTocha()" type="button">Jugar ahora</h4>
+                </div>
+            </div>
+            <div class="row-1">
+                <div class="col-1">
+                    <h2>Ajedrez Tocho</h2>
+                    <p>Nuestro primer videojuego<br><br>Programado en C<br>Por: Carlos Zamora y Guillermo Ortiz</p>
+                    <h3>12/5/2022</h3>
+                    <a type="button" href="ajedrezTocho/ajedrezTocho.exe" download>Jugar ahora</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/juego1_photo.png" class="blog1_photo">
+                    <div class="color-box"></div>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a class="social-icon" href="https://twitter.com/proyectotocho" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-twitter"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/proyectotocho/" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-instagram"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.youtube.com/@proyectotocho" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-youtube"></ion-icon>
+            </a>
+        </div>
+    </div>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
