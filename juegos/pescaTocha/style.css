@@ -1,0 +1,1833 @@
+body
+{
+    background-image:url(images/fondo/black_screen.webp);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+}
+
+#videoJefeMirando
+{   
+    display:none;
+    position:absolute;
+    height:720px;
+    width:1276px;
+    z-index: 10;
+}
+
+#botonPantallaNegra
+{
+    color:white;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Darumadrop One", "Consolas";
+    position:absolute;
+    border:none;
+    width:90%;
+    height:90%;
+    cursor:pointer;
+}
+
+#pantallaTitulo
+{
+    display:none;
+}
+
+#juegoPesca
+{
+    display:none;
+}
+#tituloLogo
+{
+    position:absolute;
+    background-image:url(images/pantalla_incio/logo_pesca_tocha.png);
+    width:60%;
+    left:20%;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+#pressStart
+{
+    position:absolute;
+    background-image:url(images/pantalla_incio/press_start_animated.gif);
+    width:40%;
+    background-size:100%;
+    left:30%;
+    background-repeat:no-repeat;
+    cursor:pointer;
+}
+#copyright
+{
+    position:absolute;
+    background-image:url(images/pantalla_incio/copyright.png);
+    width:20%;
+    background-size:100%;
+    bottom:0px;
+    left:40%;
+    background-repeat:no-repeat;
+}
+
+#cania
+{
+    position:absolute;
+    bottom:0px;
+    left:60%;
+    pointer-events: none;
+    z-index: 3;
+}
+#cuerda
+{
+    position:absolute;
+    background-image:url(images/cania/cuerda.png);
+    height:7px;
+    width:50px;
+    bottom:515px;
+    transform-origin: bottom left;
+    rotate:-90deg;
+    pointer-events: none;
+    z-index: 3;
+}
+#puntera
+{
+    position:relative;
+    background-image:url(images/cania/puntera.png);
+    height:180px;
+    width:94px;
+    left:206px;
+    bottom:-6px;
+    z-index: 3;
+}
+#anzuelo
+{
+    position:absolute;
+    background-image:url(images/cania/anzuelo.png);
+    height:19px;
+    width:19px;
+    bottom:500px;
+    pointer-events: none;
+    background-size:100%;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+#mango
+{
+    position:relative;
+    background-image:url(images/cania/mango.png);
+    height:391px;
+    width:218px;
+    z-index: 3;
+}
+
+#areaPesca
+{
+    position:absolute;
+    bottom:0px;
+    left:21.5%;
+    background-color:#36C5F4;
+    height:40%;
+    width:60%;
+    cursor:pointer;
+    border:none;
+}
+
+#pantallaPesca
+{
+    display:none;
+}
+#fondoMadera
+{
+    position:absolute;
+    background-image:url(images/elements/wood_plank.png);
+    height:621px;
+    width:1178px;
+    background-size:100%;
+    cursor:pointer;
+    z-index: 3;
+}
+#modeloPez
+{
+    z-index: 3;
+}
+.maderaTrasparente
+{
+    pointer-events: none;
+}
+.maderaTexto
+{
+    position:absolute;
+    color:white;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    border:none;
+}
+#pesoPez
+{
+    left:200px;
+    height:40px;
+    width:400px;
+    font-size:40px;
+    bottom:50px;
+}
+#tamanioPez
+{
+    left:500px;
+    height:40px;
+    width:300px;
+    font-size:40px;
+    bottom:50px;
+}
+#dineroPez
+{
+    left:770px;
+    height:80px;
+    width:300px;
+    font-size:80px;
+    bottom:40px;
+}
+
+#tienda
+{
+    display:none;
+}
+#botonBajarTienda
+{
+    position:absolute;
+    background-image: url(images/elements/shop_button.png);
+    height:112px;
+    width:180px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    right:10px;
+    top:10px;
+    cursor:pointer;
+}
+#fondoTienda
+{
+    display: none;
+    position:absolute;
+    background-image: url(images/elements/shop_wood_plank.png);
+    height:661px;
+    width:959px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:-5px;
+    z-index:4;
+}
+#botonesTienda
+{
+    display: none;
+}
+#botonOpcionesTienda
+{
+    position:absolute;
+    background-image: url(images/elements/settings_button.png);
+    height:113px;
+    width:180px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    right:10px;
+    top:10px;
+    cursor:pointer;
+}
+#botonCatalogoTienda
+{
+    position:absolute;
+    background-image: url(images/elements/catalogue_button.png);
+    height:113px;
+    width:180px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    right:10px;
+    top:133px;
+    cursor:pointer;
+}
+#botonSubirTienda
+{
+    position:absolute;
+    background-image: url(images/elements/shop_button_up.png);
+    height:112px;
+    width:180px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    right:10px;
+    top:256px;
+    cursor:pointer;
+}
+#dickTinieblas
+{
+    display: none;
+    position:absolute;
+    background-image: url(images/elements/dick_tinieblas.png);
+    height:208px;
+    width:305px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    left:5px;
+    bottom:0px;
+    cursor:pointer;
+    z-index:5;
+}
+#burbujaTextoDick
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/elements/text_bubble.png);
+    height:170px;
+    width:305px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    left:5px;
+    bottom:200px;
+    z-index:5;
+}
+#textoHablarDick
+{
+    position:absolute;
+    color:black;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    border:none;
+    height:170px;
+    width:282px;
+    font-size:20px;
+    text-align: justify;
+    left:10px;
+    bottom:-25px;
+}
+#tablonCompra
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/elements/small_wood_plank_light.png);
+    height:119px;
+    width:256px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    left:29.5px;
+    bottom:380px;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:40px;
+    text-align: center;
+    color:black;
+    z-index:5;
+}
+#botonComprarSi
+{
+    position:absolute;
+    height:40px;
+    width:40px;
+    left:58.67px;
+    cursor:pointer;
+    color:green;
+}
+#botonComprarNo
+{
+    position:absolute;
+    height:40px;
+    width:40px;
+    right:70px;
+    cursor:pointer;
+    color:red;
+}
+
+.bordesAnzuelos
+{
+    position:absolute;
+    background-image:url(images/elements/shop_item_border.png);
+    height:199px;
+    width:132px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:200px;
+    z-index: 6;
+}
+#bordeAnzueloLigero
+{
+    background-image:url(images/elements/shop_item_border_golden.png);
+    left:86.2px;
+}
+#fotoAnzueloLigero
+{
+    position:absolute;
+    background-image: url(images/elements/lightweight_fish_hook.png);
+    height:160px;
+    width:94px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:220px;
+    left:105.2px;
+    cursor: pointer;
+    z-index: 6;
+}
+#bordeAnzueloMediano
+{
+    background-image:url(images/elements/shop_item_border_gray.png);
+    left:304.4px;
+}
+#fotoAnzueloMediano
+{
+    position:absolute;
+    background-image: url(images/elements/gray_fish_hook.png);
+    height:160px;
+    width:94px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:220px;
+    left:323.4px;
+    cursor: pointer;
+    z-index: 6;
+}
+#bordeAnzueloPesado
+{
+    background-image:url(images/elements/shop_item_border_gray.png);
+    left:522.6px;
+}
+#fotoAnzueloPesado
+{
+    position:absolute;
+    background-image: url(images/elements/gray_fish_hook.png);
+    height:160px;
+    width:94px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:220px;
+    left:541.6px;
+    cursor: pointer;
+    z-index: 6;
+}
+#bordeAnzueloMisterioso
+{
+    background-image:url(images/elements/shop_item_broken_border.png);
+    display:inline;
+    left:740.8px;
+    cursor:pointer;
+}
+#fotoAnzueloMisterioso
+{
+    display:none;
+    position:absolute;
+    background-image: url(images/elements/gray_fish_hook.png);
+    height:160px;
+    width:94px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:220px;
+    left:759.8px;
+    cursor: pointer;
+    z-index: 6;
+}
+.bordesCanias
+{
+    position:absolute;
+    background-image:url(images/elements/shop_item_border_fishing_rod.png);
+    height:199px;
+    width:132px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:425px;
+    z-index: 6;
+}
+#bordeCania
+{
+    background-image:url(images/elements/shop_item_border_golden_fishing_rod.png);
+    left:49.83px;
+}
+#fotoCania
+{
+    position:absolute;
+    background-image: url(images/elements/fishing_rod.png);
+    height:159px;
+    width:119px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:445px;
+    left:56.33px;
+    z-index: 6;
+}
+#bordeCaniaMas1
+{
+    background-image:url(images/elements/shop_item_border_gray.png);
+    left:231.67px;
+}
+#fotoCaniaMas1
+{
+    position:absolute;
+    background-image: url(images/elements/gray_fishing_rod.png);
+    height:159px;
+    width:119px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:445px;
+    left:238.16px;
+    cursor: pointer;
+    z-index: 6;
+}
+#bordeCaniaMas2
+{
+    background-image:url(images/elements/shop_item_border_gray.png);
+    left:413.5px;
+}
+#fotoCaniaMas2
+{
+    position:absolute;
+    background-image: url(images/elements/gray_fishing_rod.png);
+    height:159px;
+    width:119px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:445px;
+    left:419.99px;
+    cursor: pointer;
+    z-index: 6;
+}
+#bordeCaniaMas3
+{
+    background-image:url(images/elements/shop_item_border_gray.png);
+    left:595.33px;
+}
+#fotoCaniaMas3
+{
+    position:absolute;
+    background-image: url(images/elements/gray_fishing_rod.png);
+    height:159px;
+    width:119px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:445px;
+    left:601.82px;
+    cursor: pointer;
+    z-index: 6;
+}
+#bordeCaniaMas4
+{
+    background-image:url(images/elements/shop_item_border_gray.png);
+    left:777.67px;
+}
+#fotoCaniaMas4
+{
+    position:absolute;
+    background-image: url(images/elements/gray_fishing_rod.png);
+    height:159px;
+    width:119px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:445px;
+    left:783.65px;
+    cursor: pointer;
+    z-index: 6;
+}
+
+#fondoDineroTotal
+{
+    background-image: url(images/elements/small_wood_plank.png);
+    height:135px;
+    width:290px;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+#monedaOro
+{
+    position:absolute;  
+    background-image:url(images/elements/gold_coin.png);
+    height:80px;
+    width:80px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left:20px;
+    top:40px;
+}
+#dineroTotal
+{
+    position:absolute;
+    color:gold;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    border:none;
+    height:80px;
+    width:170px;
+    font-size:60px;
+    text-align: center;
+    left:110px;
+    top:25px;
+}
+
+#fondoOpciones
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/elements/small_wood_plank_options.png);
+    height:370px;
+    width:1099px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    z-index:8;
+}
+#cambiarDificultad
+{
+    position:absolute;
+    color:black;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:80px;
+    top:50px;
+    left:150px;
+}
+#fondoDificultadSeleccionada
+{
+    position:absolute;
+    background-image:url(images/elements/small_wood_plank_light.png);
+    height:119px;
+    width:256px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:173px;
+    left:78px;
+}
+#botonDificultadNormal
+{
+    position:absolute;
+    color:yellow;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:60px;
+    top:180px;
+    left:90px;
+    cursor:pointer;
+}
+#botonDificultadDificil
+{
+    position:absolute;
+    color:red;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:60px;
+    top:180px;
+    left:420px;
+    cursor:pointer;
+}
+#botonRegresarPantallaTitulo
+{
+    position:absolute;
+    background-image:url(images/elements/title_screen_button.png);
+    height:141px;
+    width:141px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    border-width:10px;
+    border-style:solid;
+    border-radius:20px;
+    border-color:gray;
+    cursor:pointer;
+    top:110px;
+    right:40px;
+}
+#botonRegresarTutorial
+{
+    position:absolute;
+    background-image:url(images/elements/tutorial_button.png);
+    height:141px;
+    width:141px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    border-width:10px;
+    border-style:solid;
+    border-radius:20px;
+    border-color:gray;
+    cursor:pointer;
+    top:110px;
+    right:250px;
+}
+#botonSalirOpciones
+{
+    position:absolute;
+    color:red;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:100px;
+    top:-80px;
+    left:1060px;
+    cursor:pointer;
+}
+
+#fondoSeguroRegresar
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/elements/small_wood_plank_options.png);
+    height:370px;
+    width:1099px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:50px;
+    text-align:center;
+    padding-top:30px;
+    z-index:9;
+}
+#botonRegresarSi
+{
+    position:absolute;
+    color:green;
+    cursor:pointer;
+    height:50px;
+    width:50px;
+    left:524.5px;
+    top:180px;
+}
+#botonRegresarNo
+{
+    position:absolute;
+    color:red;
+    cursor:pointer;
+    height:50px;
+    width:50px;
+    left:524.5px;
+    top:240px;
+}
+
+#tutorial
+{
+    display:none;
+}
+#dickTutorial
+{
+    position:absolute;
+    background-image: url(images/elements/dick_tinieblas_animated.gif);
+    height:260px;
+    width:382px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    bottom:0px;
+    cursor:pointer;
+}
+#burbujaTutorial
+{
+    position:absolute;
+    background-image:url(images/elements/text_bubble.png);
+    height:262px;
+    width:469px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    bottom:300px;
+}
+#textoTutorial
+{
+    position:absolute;
+    color:black;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    border:none;
+    height:262px;
+    width:440px;
+    font-size:25px;
+    text-align: justify;
+    left:14px;
+    top:0px;
+}
+
+#fondoCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_catalogue.png);
+    height:630px;
+    width:1120px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    z-index:8;
+}
+#cartaPezCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_preview_card.png);
+    height:585px;
+    width:431px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:22.5px;
+    right:22.5px;
+}
+.cartaIndividualCatalogo
+{
+    position:absolute;
+    background-image: url(images/catalogo/individual_fish_card.png);
+    height:93px;
+    width:112px;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.fotoIndividualCatalogo
+{
+    display:none;
+}
+.CICFila1
+{
+    top:25px;
+}
+#fotoMojarraCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/bluegill_shadow.png);
+    height:45px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:24px;
+    left:11px;
+}
+#fotoLubinaCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/sea_bass_shadow.png);
+    height:38px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:27.5px;
+    left:11px;
+}
+#fotoPezPayasoCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/clownfish_shadow.png);
+    height:52px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:20.5px;
+    left:11px;
+}
+#fotoCarpaCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/carp_shadow.png);
+    height:39px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:27px;
+    left:11px;
+}
+#fotoAnchoaCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/anchovy_shadow.png);
+    height:28px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:32.5px;
+    left:11px;
+}
+#fotoKoiCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/koi_shadow.png);
+    height:35px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:29px;
+    left:11px;
+}
+.CICColumna1
+{
+    left:25px;
+}
+.CICFila2
+{
+    top:123px;
+}
+#fotoGoldfishCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/goldfish_shadow.png);
+    height:52px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:20.5px;
+    left:11px;
+}
+#fotoPezGloboCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/pufferfish_deflated_shadow.png);
+    height:45px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:24px;
+    left:11px;
+}
+#fotoAtunCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/tuna_shadow.png);
+    height:46px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:23.5px;
+    left:11px;
+}
+#fotoTetraNeonCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/neon_tetra_shadow.png);
+    height:41px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:26px;
+    left:11px;
+}
+.CICColumna2
+{
+    left:152px;
+}
+.CICFila3
+{
+    top:221px;
+}
+#fotoTortugaCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/turtle_shadow.png);
+    height:54px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:19.5px;
+    left:11px;
+}
+#fotoRanaCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/frog_shadow.png);
+    height:50px;
+    width:48px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:21.5px;
+    left:32px;
+}
+#fotoTruchaCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/trout_shadow.png);
+    height:30px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:31.5px;
+    left:11px;
+}
+#fotoBagreCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/catfish_shadow.png);
+    height:33px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:30px;
+    left:11px;
+}
+#fotoCangrejoRioCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/crawfish_shadow.png);
+    height:50px;
+    width:50px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:21.5px;
+    left:31px;
+}
+.CICColumna3
+{
+    left:279px;
+}
+.CICFila4
+{
+    top:319px;
+}
+#fotoSalmonCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/salmon_shadow.png);
+    height:33px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:30px;
+    left:11px;
+}
+#fotoPezEspadaCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/swordfish_shadow.png);
+    height:35px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:29px;
+    left:11px;
+}
+#fotoCharCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/char_shadow.png);
+    height:26px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:33.5px;
+    left:11px;
+}
+#fotoMagikarpCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/magikarp_shadow.png);
+    height:50px;
+    width:52px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:21.5px;
+    left:30px;
+}
+#fotoCangrejoCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/crab_shadow.png);
+    height:62px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:15.5px;
+    left:11px;
+}
+.CICColumna4
+{
+    left:406px;
+}
+.CICFila5
+{
+    top:417px;
+}
+#fotoEsturionCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/sturgeon_shadow.png);
+    height:22px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:35.5px;
+    left:11px;
+}
+#fotoPiraniaCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/piranha_shadow.png);
+    height:57px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:18px;
+    left:11px;
+}
+#fotoPezRapeCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/anglerfish_shadow.png);
+    height:54px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:19.5px;
+    left:11px;
+}
+#fotoCachaloteCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/sperm_whale_shadow.png);
+    height:37px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:28px;
+    left:11px;
+}
+#fotoTiburonBlancoCatalogo
+{
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/great_white_shark_shadow.png);
+    height:32px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:30.5px;
+    left:11px;
+}
+.CICColumna5
+{
+    left:533px;
+}
+#cartaBallenaAzulAntarticaCatalogo
+{
+    background-image: url(images/catalogo/individual_fish_card_old.png);
+    top:515px;
+}
+#fotoBallenaAzulAntarticaCatalogo
+{
+    position:absolute;
+    background-image:url(images/fishes/antartic_blue_whale.png);
+    height:31px;
+    width:90px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    top:31px;
+    left:11px;
+}
+#nombrePezCatalogo
+{
+    position:absolute;
+    color:black;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:40px;
+    top:-20px;
+    left:180px;
+}
+#anzueloPezCatalogo
+{
+    position:absolute;
+    background-image:url(images/elements/lightweight_fish_hook.png);
+    height:40px;
+    width:23px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:525px;
+    right:20px;
+}
+#fotoPezMojarraCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/bluegill_shadow.png);
+    height:135px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:100px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezLubinaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/sea_bass_shadow.png);
+    height:114px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezPezPayasoCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/clownfish_shadow.png);
+    height:156px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezCarpaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/carp_shadow.png);
+    height:117px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezAnchoaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/anchovy_shadow.png);
+    height:84px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezKoiCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/koi_shadow.png);
+    height:105px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezGoldfishCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/goldfish_shadow.png);
+    height:156px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezPezGloboCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/pufferfish_deflated_shadow.png);
+    height:135px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezPezGloboInfladoCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/fishes/pufferfish_inflated.png);
+    height:179px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:80px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezAtunCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/tuna_shadow.png);
+    height:138px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezTetraNeonCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/neon_tetra_shadow.png);
+    height:123px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:100px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezTortugaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/turtle_shadow.png);
+    height:166px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezRanaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/frog_shadow.png);
+    height:150px;
+    width:144px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left:143.5px;
+    cursor:pointer;
+}
+#fotoPezRanaShinyCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/fishes/frog_shiny.png);
+    height:150px;
+    width:144px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left:143.5px;
+    cursor:pointer;
+}
+#fotoPezTruchaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/trout_shadow.png);
+    height:90px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezBagreCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/catfish_shadow.png);
+    height:99px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:100px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezCangrejoRioCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/crawfish_shadow.png);
+    height:150px;
+    width:150px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:80px;
+    left:143.5px;
+    cursor:pointer;
+}
+#fotoPezSalmonCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/salmon_shadow.png);
+    height:99px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:100px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezPezEspadaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/swordfish_shadow.png);
+    height:105px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:100px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezCharCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/char_shadow.png);
+    height:78px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezMagikarpCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/magikarp_shadow.png);
+    height:150px;
+    width:156px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:80px;
+    left:143.5px;
+    cursor:pointer;
+}
+#fotoPezCangrejoCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/crab_shadow.png);
+    height:186px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:80px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezEsturionCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/sturgeon_shadow.png);
+    height:66px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:120px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezPiraniaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/piranha_shadow.png);
+    height:171px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:80px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezPezRapeCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/anglerfish_shadow.png);
+    height:166px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:90px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezCachaloteCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/sperm_whale_shadow.png);
+    height:111px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezTiburonBlancoCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/catalogo/fish_shadows/great_white_shark_shadow.png);
+    height:96px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#fotoPezBallenaAzulAntarticaCatalogo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/fishes/antartic_blue_whale.png);
+    height:93px;
+    width:270px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    top:110px;
+    left:80.5px;
+    cursor:pointer;
+}
+#descripcionPezCatalogo
+{
+    position:absolute;
+    color:white;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:60px;
+    top:300px;
+    left:160px;
+}
+#cantidadPescadosCatalogo
+{
+    position:absolute;
+    color:white;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:25px;
+    top:510px;
+    left:20px;
+}
+#botonModeloPezOriginalCatalogo
+{
+    display:inline;
+    position:absolute;
+    color:black;
+    background-color:rgba(228, 175, 76, 0.548);
+    font-family: "Darumadrop One", "Consolas";
+    font-size:20px;
+    border-width:10px;
+    border-color: rgb(110, 73, 25);
+    border-width:5px;
+    border-style:solid;
+    border-radius:15px;
+    padding:2px;
+    top:480px;
+    left:95px;
+    cursor:pointer;
+}
+#botonModeloPezAlternoCatalogo
+{
+    display:inline;
+    position:absolute;
+    color:black;
+    background-color:rgba(163, 122, 45, 0.548);
+    font-family: "Darumadrop One", "Consolas";
+    font-size:20px;
+    border-width:10px;
+    border-color: rgb(65, 41, 10);
+    border-width:5px;
+    border-style:solid;
+    border-radius:15px;
+    padding:2px;
+    top:480px;
+    left:205px;
+    cursor:pointer;
+}
+#botonSalirCatalogo
+{
+    position:absolute;
+    color:red;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:100px;
+    top:-90px;
+    left:1090px;
+    cursor:pointer;
+}
+
+#desbloqueo
+{
+    display:none;
+}
+#dickDesbloqueo
+{
+    position:absolute;
+    background-image: url(images/elements/dick_tinieblas_animated.gif);
+    height:260px;
+    width:382px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    bottom:0px;
+    cursor:pointer;
+}
+#burbujaDesbloqueo
+{
+    position:absolute;
+    background-image:url(images/elements/text_bubble.png);
+    height:262px;
+    width:469px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    bottom:300px;
+}
+#textoDesbloqueo
+{
+    position:absolute;
+    color:black;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    border:none;
+    height:262px;
+    width:440px;
+    font-size:25px;
+    text-align: justify;
+    left:14px;
+    top:0px;
+}
+
+#botonMaxeo
+{
+    position:absolute;
+    color:transparent;
+    height:1px;
+    width:1px;
+    cursor:default;
+}
+
+#tochoCanion
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/boss_fight/tocho_cannon_idle.png);
+    height:312px;
+    width:540px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    bottom:0px;
+    pointer-events: none;
+    z-index: 3;
+}
+#sacarTochoCanion
+{
+    display:none;
+    position:absolute;
+    height:312px;
+    width:540px;
+    left:30%;
+    background-size:100%;
+    background-repeat: no-repeat;
+    bottom:0px;
+    pointer-events: none;
+    z-index: 3;
+}
+#cuadroFalloFase2
+{
+    display:none;
+    position:absolute;
+    background-color: transparent;
+    height:95%;
+    width:95%;
+    top:2.5%;
+    left:2.5%;
+    background-size:100%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+#jefeFase2
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/fishes/antartic_blue_whale.png);
+    height:239px;
+    width:689px;
+    background-size:100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    cursor:pointer;
+    animation:movimientoJefeFase2;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+}
+#vidaJugador
+{
+    display:none;
+}
+.corazonVida
+{
+    position:absolute;
+    background-image:url(images/boss_fight/player_hp_heart.png);
+    height:99px;
+    width:108px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    z-index:5;
+    pointer-events: none;
+}
+#corazon1HP
+{
+    left:10px;
+}
+#corazon2HP
+{
+    left:120px;
+}
+#corazon3HP
+{
+    left:230px;
+}
+#corazon4HP
+{
+    left:340px;
+}
+#corazon5HP
+{
+    left:450px;
+}
+#vidaJefe
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/boss_fight/boss_hp_3.png);
+    height:129px;
+    width:439px;
+    right:10px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    z-index:2;
+    pointer-events: none;
+}
+#explosionDisparo
+{
+    display:none;
+    position:absolute;
+    background-image:url(images/boss_fight/explosion.png);
+    height:42px;
+    width:40px;
+    background-size:100%;
+    background-repeat:no-repeat;
+    z-index:4;
+}
+
+#pantallaGameOver
+{
+    display:none;
+}
+#botonGameOver
+{
+    position:absolute;
+    background-color: transparent;
+    height:95%;
+    width:95%;
+    top:2.5%;
+    left:2.5%;
+    background-size:100%;
+    background-repeat:no-repeat;
+    color:white;
+    background-color: transparent;
+    font-family: "Darumadrop One", "Consolas";
+    font-size:150px;
+    text-align: center;
+    cursor:pointer;
+}
+
+@keyframes morderIzquierda
+{
+    from{margin-left:0%;}
+    to{margin-left:-1%;}
+}
+@keyframes morderDerecha
+{
+    from{margin-left:0%;}
+    to{margin-left:1%;}
+}
+@keyframes morderArriba
+{
+    from{margin-top:-1%;}
+    to{margin-top:0%;}
+}
+
+@keyframes movimientoJefeFase2
+{
+    0%{top:60%;}
+    5%{top:50%;left:60%;}
+    10%{top:30%;}
+    25%{top:40%;left:-10%;}
+    26%{top:45%;left:50%;}
+    27%{top:60%;left:5%;}
+    28%{top:50%;left:60%;}
+    29%{top:15%;left:80%;}
+    20%{top:70%;left:20%;}
+    25%{top:40%;left:10%;}
+    30%{top:5%;left:10%;}
+    35%{top:15%;}
+    40%{top:-5%;left:60%;}
+    45%{top:40%;left:50%;}
+    46%{top:5%;left:5%;}
+    47%{top:30%;left:20%;}
+    48%{top:70%;left:10%;}
+    49%{top:20%;left:65%;}
+    50%{top:60%;left:50%;}
+    55%{top:-5%;left:-5%;}
+    60%{top:30%;left:60%;}
+    65%{top:40%;left:70%;}
+    66%{top:60%;left:50%;}
+    67%{top:-10%;left:70%;}
+    68%{top:40%;left:-10%;}
+    69%{top:70%;left:50%;}
+    70%{top:60%;left:50%;}
+    75%{top:10%;left:25%;}
+    80%{top:10%;left:40%;}
+    85%{top:65%;left:55%;}
+    90%{top:60%;left:50%;}
+    90.5%{top:70%;left:10%;}
+    91%{top:25%;left:55%;}
+    92.5%{top:20%;left:65%;}
+    93%{top:50%;left:60%;}
+    93.5%{top:-15%;left:80%;}
+    94%{top:15%;left:5%;}
+    94.5%{top:40%;left:10%;}
+    95%{top:10%;left:50%;}
+    95.5%{top:-5%;left:5%;}
+    96%{top:35%;left:-10%;}
+    96.5%{top:50%;left:60%;}
+    97%{top:50%;left:55%;}
+    97.5%{top:30%;left:25%;}
+    98%{top:-10%;left:70%;}
+    98.5%{top:70%;left:-5%;}
+    99%{top:10%;left:60%;}
+    99.5%{top:5%;left:60%;}
+    100%{top:60%;left:30%;}
+}
+
+@keyframes movimentoProyectil
+{
+    from{top:0%;}
+    to{top:70%};
+}

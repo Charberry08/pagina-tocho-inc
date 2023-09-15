@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesca Tocha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = "https://static-00.iconduck.com/assets.00/fishing-pole-and-fish-emoji-482x512-pa9749t9.png" type = "image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+</head>
+<body id="fondo" name="fondo"><!-- Audios y videos -->
+    <audio loop id="musicaInicio" name="musicaInicio" src="audio/title_screen_music.mp3"></audio>
+    <audio loop id="musicaPescaDiaLarga" name="musicaPescaDiaLarga" src="audio/background_day_fishing_music_long.mp3"></audio>
+    <audio loop id="musicaPescaDiaCorta" name="musicaPescaDiaCorta" src="audio/background_day_fishing_music_short.mp3"></audio>
+    <audio loop id="musicaPescaAtardecer" name="musicaPescaAtardecer" src="audio/background_sunset_fishing_music.mp3"></audio>
+    <audio loop id="musicaPescaNoche" name="musicaPescaNoche" src="audio/background_night_fishing_music.mp3"></audio>
+    <audio loop id="musicaPescaAmanecer" name="musicaPescaAmanecer" src="audio/background_sunrise_fishing_music.mp3"></audio>
+    <audio id="sonidoAtrapar" name="sonidoAtrapar" src="audio/water_splash_sfx.mp3"></audio>
+    <audio id="falsoAtrapar" name="falsoAtrapar" src="audio/false_splash_sfx.mp3"></audio>
+    <audio id="sonidoCania" name="sonidoCania" src="audio/fishing_rod_splash_sfx.mp3"></audio>
+    <audio id="sonidoCaptura" name="sonidoCaptura" src="audio/fish_catch_sfx.wav"></audio>
+    <audio id="sonidoRotura" name="sondioRotura" src="audio/string_break_sfx.mp3"></audio>
+    <audio id="vozDick1" name="vozDick1" src="audio/dick_voices/dick_voice_1.mp3"></audio>
+    <audio id="vozDick2" name="vozDick2" src="audio/dick_voices/dick_voice_2.mp3"></audio>
+    <audio id="vozDick3" name="vozDick3" src="audio/dick_voices/dick_voice_3.mp3"></audio>
+    <audio id="vozDick4" name="vozDick4" src="audio/dick_voices/dick_voice_4.mp3"></audio>
+    <audio id="vozDick5" name="vozDick5" src="audio/dick_voices/dick_voice_5.mp3"></audio>
+    <audio id="sonidoClick" name="sonidoClick" src="audio/click_sfx.mp3"></audio>
+    <audio loop id="musicaJefeFase1" name="musicaJefeFase1" src="audio/boss_phase1_music.mp3";></audio>
+    <audio loop id="musicaJefeFase2" name="musicaJefeFase2" src="audio/boss_phase2_music.mp3";></audio>
+    <audio id="musicaJefeFase2Comienzo" name="musicaJefeFase2Comienzo" src="audio/boss_phase2_music_beginning.mp3";></audio>
+    <audio id="notaDo" name="notaDo" src="audio/boss_phase1_notes/C.mp3"></audio>
+    <audio id="notaRe" name="notaRe" src="audio/boss_phase1_notes/D.mp3"></audio>
+    <audio id="notaRe#" name="notaRe#" src="audio/boss_phase1_notes/DSharp.mp3"></audio>
+    <audio id="notaFa" name="notaFa" src="audio/boss_phase1_notes/F.mp3"></audio>
+    <audio id="notaSol" name="notaSol" src="audio/boss_phase1_notes/G.mp3"></audio>
+    <audio id="notaSol#" name="notaSol#" src="audio/boss_phase1_notes/GSharp.mp3"></audio>
+    <audio id="notaSi" name="notaSi" src="audio/boss_phase1_notes/B.mp3"></audio>
+    <audio id="notaDoFinal" name="notaDoFinal" src="audio/boss_phase1_notes/C2.mp3"></audio>
+    <audio id="sonidoAtraparJefeFase1" name="sonidoAtraparJefeFase1" src="audio/boss_phase1_catch_sfx.wav"></audio>
+    <audio id="sonidoJefeMirando" name="sonidoJefeMirando" src="audio/whale_staring_sfx.mp3"></audio>
+    <audio id="llantoJefeFase2" name="llantoJefeFase2" src="audio/boss_phase2_crying.mp3"></audio>
+    <audio id="sonidoDisparoFase2" name="sonidoDisparoFase2" src="audio/boss_phase2_shooting_sfx.mp3"></audio>
+    <audio id="sonidoGolpeJugador" name="sonidoGolpeJugador" src="audio/hit_sfx.mp3"></audio>
+    <audio id="sonidoGolpejefe" name="sonidoGolpeJefe" src="audio/boss_phase2_hit.mp3"></audio>
+    <audio loop id="musicaGameOver" name="musicaGameOver" src="audio/game_over_music.mp3"></audio>
+    <audio loop id="musicaFase3" name="musicaFase3" src="audio/nature_sounds_boss_phase3.mp3"></audio>
+    <audio id="sonidoAtraparJefeFase3" name="sonidoAtraparJefeFase3" src="audio/boss_phase3_catch_sfx.wav"></audio>
+    <video id="sacarTochoCanion" name="sacarTochoCanion" src="videos/tocho_cannon_take_out.mp4"></video>
+    <video id="videoJefeMirando" name="videoJefeMirando" src="videos/blue_whale_staring.mp4"></video>
+    <form id="pantallaNegra" name="pantallaNegra"><!-- Pantalla negra inicial -->
+        <div onclick="iniciarPantallaInicio()" type="button" id="botonPantallaNegra" name="botonPantallaNegra"><br><br>Click para iniciar</div>
+    </form>
+    <form id="pantallaTitulo" name="pantallaTitulo"><!-- Pantalla de título -->
+        <div id="tituloLogo" name="tituloLogo"></div>
+        <div onclick="iniciarJuego()" type="button" id="pressStart" name="pressStart"></div>
+        <div id="copyright" name="copyright"></div>
+    </form>
+    <form id="tutorial" name="tutorial"><!-- Tutorial inicial -->
+        <div onclick="avanzarTutorial()" type="button" id="dickTutorial" name="dickTutorial"></div>
+        <div id="burbujaTutorial" name="burbujaTutorial">
+            <p id="textoTutorial" name="textoTutorial"></p>
+        </div>
+    </form>
+    <form id="juegoPesca" name="juegoPesca"><!-- Juego de pesca -->
+        <div onclick="maxearAutomaticamente()" type="button" id="botonMaxeo" name="botonMaxeo">.</div>
+        <div id="fondoDineroTotal" name="fondoDineroTotal">
+            <div id="monedaOro" name="monedaOro"></div>
+            <input type="text" id="dineroTotal" name="dineroTotal" disabled>
+        </div>
+        <div id="estanque" name="estanque">
+            <div onclick="lanzarAnzuelo()" type="button" id="areaPesca" name="areaPesca">
+                <div id="peces" name="peces"></div>
+                <div id="cuerda" name="cuerda"></div>
+                <div id="anzuelo" name="anzuelo"></div>
+            </div>
+        </div>
+        <div id="cania" name="cania">
+            <div id="puntera" name="puntera"></div>
+            <div id="mango" name="mango"></div>
+        </div>
+    </form>
+    <form id="pantallaPesca" name="pantallaPesca"><!-- Tabla con pez que se muestra al pescar -->
+        <div onclick="quitarMadera()" type="button" id="fondoMadera" name="fondoMadera">
+            <input type="text" id="pesoPez" name="pesoPez" class="maderaTrasparente maderaTexto" disabled>
+            <input type="text" id="tamanioPez" name="tamanioPez" class="maderaTrasparente maderaTexto" disabled>
+            <input type="text" id="dineroPez" name="dineroPez" class="maderaTrasparente maderaTexto" disabled>
+        </div>
+        <div id="modeloPez" name="modeloPez" class="maderaTrasparente"></div>
+    </form>
+    <form id="tienda" name="tienda"><!-- Tienda incluyendo los botones -->
+        <div onclick="bajarTiendaComienzo()" type="button" id="botonBajarTienda" name="botonBajarTienda"></div>
+        <div id="fondoTienda" name="fondoTienda">
+            <form id="itemsTienda" name="itemsTienda">
+                <div id="anzuelosTienda" name="anzuelosTienda">
+                    <id id="bordeAnzueloLigero" name="bordeAnzueloLigero" class="bordesAnzuelos"></id>
+                    <id onclick="cambiarAnzuelo(0)" type="button" id="fotoAnzueloLigero" name="fotoAnzueloLigero" class="fotosAnzuelos"></id>
+                    <id id="bordeAnzueloMediano" name="bordeAnzueloMediano" class="bordesAnzuelos"></id>
+                    <id onclick="cambiarAnzuelo(1)" type="button" id="fotoAnzueloMediano" name="fotoAnzueloMediano" class="fotosAnzuelos"></id>
+                    <id id="bordeAnzueloPesado" name="bordeAnzueloPesado" class="bordesAnzuelos"></id>
+                    <id onclick="cambiarAnzuelo(2)" type="button" id="fotoAnzueloPesado" name="fotoAnzueloPesado" class="fotosAnzuelos"></id>
+                    <id onclick="dialogoMisterioso()" type="button" id="bordeAnzueloMisterioso" name="bordeAnzueloMisterioso" class="bordesAnzuelos"></id>
+                    <id onclick="cambiarAnzuelo(3)" type="button" id="fotoAnzueloMisterioso" name="fotoAnzueloMisterioso" class="fotosAnzuelos"></id>
+                </div>
+                <div id="caniasTienda" name="caniasTienda">
+                    <id id="bordeCania" name="bordeCania" class="bordesCanias"></id>
+                    <id id="fotoCania" name="fotoCania" class="fotosCanias"></id>
+                    <id id="bordeCaniaMas1" name="bordeCaniaMas1" class="bordesCanias"></id>
+                    <id onclick="comprarCania(1)" type="button" id="fotoCaniaMas1" name="fotoCaniaMas1" class="fotosCanias"></id>
+                    <id id="bordeCaniaMas2" name="bordeCaniaMas2" class="bordesCanias"></id>
+                    <id onclick="comprarCania(2)" type="button" id="fotoCaniaMas2" name="fotoCaniaMas2" class="fotosCanias"></id>
+                    <id id="bordeCaniaMas3" name="bordeCaniaMas3" class="bordesCanias"></id>
+                    <id onclick="comprarCania(3)" type="button" id="fotoCaniaMas3" name="fotoCaniaMas3" class="fotosCanias"></id>
+                    <id id="bordeCaniaMas4" name="bordeCaniaMas4" class="bordesCanias"></id>
+                    <id onclick="comprarCania(4)" type="button" id="fotoCaniaMas4" name="fotoCaniaMas4" class="fotosCanias"></id>
+                </div>
+            </form>
+        </div>
+        <div id="botonesTienda" name="botonesTienda">
+            <div onclick="entrarOpciones()" type="button" id="botonOpcionesTienda" name="botonOpcionesTienda"></div>
+            <div onclick="entrarCatalogo()" type="button" id="botonCatalogoTienda" name="botonCatalogoTienda"></div>
+            <div onclick="subirTiendaFuncion()" type="button" id="botonSubirTienda" name="botonSubirTienda"></div>
+        </div>
+        <div onclick="dickHablar()" type="button" id="dickTinieblas" name="dickTinieblas"></div>
+        <div id="burbujaTextoDick" name="burbujaTextoDick">
+            <p id="textoHablarDick" name="textohablarDick"></p>
+        </div>
+        <div id="tablonCompra" name="tablonCompra">
+            ¿Comprar?
+            <div onclick="realizarCompra()" type="button" id="botonComprarSi" name="botonComprarSi">SI</div>
+            <div onclick="salirDeCompra()" type="button" id="botonComprarNo" name="botonComprarNo">NO</div>
+        </div>
+    </form>
+    <form id="opciones" name="opciones"><!-- Menu de opciones -->
+        <div id="fondoOpciones" name="fondoOpciones">
+            <div id="cambiarDificultad" name="cambiarDificultad">DIFICULTAD</div>
+            <div id="fondoDificultadSeleccionada" name="fondoDificultadSeleccionada"></div>
+            <div onclick="cambiarDificultadNormal()" type="button" id="botonDificultadNormal" name="botonDificultadNormal">NORMAL</div>
+            <div onclick="cambiarDificultadDificil()" type="button" id="botonDificultadDificil" name="botonDificultadDificil">DIFÍCIL</div>
+            <div onclick="menuAsegurarSalir()" type="button" id="botonRegresarPantallaTitulo" name="botonRegresarPantallaTitulo"></div>
+            <div onclick="regresarTutorial()" type="button" id="botonRegresarTutorial" name="botonRegresarTutorial"></div>
+            <div onclick="salirOpciones()" type="button" id="botonSalirOpciones" name="botonSalirOpciones">x</div>
+        </div>
+    </form>
+    <form id="seguroRegresar" name="seguroRegresar"><!-- Menu para asegurar regresar -->
+        <div id="fondoSeguroRegresar" name="fondoSeguroRegresar">
+            Todo el progreso se perderá.
+            <br>
+            ¿Estás seguro?
+            <div onclick="regresarPantallaTitulo()" type="button" id="botonRegresarSi" name="botonRegresarSi">SI</div>
+            <div onclick="noRegresarTitulo()" type="button" id="botonRegresarNo" name="botonRegresarNo">NO</div>
+        </div>
+    </form>
+    <form id="catalogo" name="catalogo"><!-- Catalogo -->
+        <div id="fondoCatalogo" name="fondoCatalogo">
+            <div id="cartaPezCatalogo" name="cartaPezCatalogo">
+                <p id="nombrePezCatalogo" name="nombrePezCatalogo">???</p>
+                <div id="anzueloPezCatalogo" name="fotoAnzueloPezCatalogo"></div>
+                <div id="fotoPezMojarraCatalogo" name="fotoPezMojarraCatalogo"></div>
+                <div id="fotoPezLubinaCatalogo" name="fotoPezLubinaCatalogo"></div>
+                <div id="fotoPezPezPayasoCatalogo" name="fotoPezPezPayasoCatalogo"></div>
+                <div id="fotoPezCarpaCatalogo" name="fotoPezCarpaCatalogo"></div>
+                <div id="fotoPezAnchoaCatalogo" name="fotoPezAnchoaCatalogo"></div>
+                <div id="fotoPezKoiCatalogo" name="fotoPezKoiCatalogo"></div>
+                <div id="fotoPezGoldfishCatalogo" name="fotoPezGoldfishCatalogo"></div>
+                <div id="fotoPezPezGloboCatalogo" name="fotoPezPezGloboCatalogo"></div>
+                <div id="fotoPezPezGloboInfladoCatalogo" name="fotoPezPezGloboInfladoCatalogo"></div>
+                <div id="fotoPezAtunCatalogo" name="fotoPezAtunCatalogo"></div>
+                <div id="fotoPezTetraNeonCatalogo" name="fotoPezTetraNeonCatalogo"></div>
+                <div id="fotoPezTortugaCatalogo" name="fotoPezTortugaCatalogo"></div>
+                <div id="fotoPezRanaCatalogo" name="fotoPezRanaCatalogo"></div>
+                <div id="fotoPezRanaShinyCatalogo" name="fotoPezRanaShinyCatalogo"></div>
+                <div id="fotoPezTruchaCatalogo" name="fotoPezTruchaCatalogo"></div>
+                <div id="fotoPezBagreCatalogo" name="fotoPezBagreCatalogo"></div>
+                <div id="fotoPezCangrejoRioCatalogo" name="fotoPezCangrejoRioCatalogo"></div>
+                <div id="fotoPezSalmonCatalogo" name="fotoPezSalmonCatalogo"></div>
+                <div id="fotoPezPezEspadaCatalogo" name="fotoPezPezEspadaCatalogo"></div>
+                <div id="fotoPezCharCatalogo" name="fotoPezCharCatalogo"></div>
+                <div id="fotoPezMagikarpCatalogo" name="fotoPezMagikarpCatalogo"></div>
+                <div id="fotoPezCangrejoCatalogo" name="fotoPezCangrejoCatalogo"></div>
+                <div id="fotoPezEsturionCatalogo" name="fotoPezEsturionCatalogo"></div>
+                <div id="fotoPezPiraniaCatalogo" name="fotoPezPiraniaCatalogo"></div>
+                <div id="fotoPezPezRapeCatalogo" name="fotoPezPezRapeCatalogo"></div>
+                <div id="fotoPezCachaloteCatalogo" name="fotoPezCachaloteCatalogo"></div>
+                <div id="fotoPezTiburonBlancoCatalogo" name="fotoPezTiburonBlancoCatalogo"></div>
+                <div id="fotoPezBallenaAzulAntarticaCatalogo" name="fotoPezBallenaAzulAntarticaCatalogo"></div>
+                <p id="descripcionPezCatalogo" name="descripcionPezCatalogo">0/7</p>
+                <p id="cantidadPescadosCatalogo" name="cantidadPescadosCatalogo">Pescados: 0</p>
+                <div onclick="cambiarModeloOriginal()" type="button" id="botonModeloPezOriginalCatalogo" name="botonModeloPezOriginalCatalogo">ORIGINAL</div>
+                <div onclick="cambiarModeloSecundario()" type="button" id="botonModeloPezAlternoCatalogo" name="botonModeloPezAlternoCatalogo">SECUNDARIO</div>
+            </div>
+            <div id="cartasIndividualesCatalogo" name="cartasIndividualesCatalogo">
+                <div id="cartaMojarraCatalogo" name="cartaMojarraCatalogo" class="cartaIndividualCatalogo CICFila1 CICColumna1">
+                    <div onclick="cambiarCartaCatalogo(1)" type="button" id="fotoMojarraCatalogo" name="fotoMojarraCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaLubinaCatalogo" name="cartaLubinaCatalogo" class="cartaIndividualCatalogo CICFila1 CICColumna2">
+                    <div onclick="cambiarCartaCatalogo(2)" type="button" id="fotoLubinaCatalogo" name="fotoLubinaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaPezPayasoCatalogo" name="cartaPezPayasoCatalogo" class="cartaIndividualCatalogo CICFila1 CICColumna3">
+                    <div onclick="cambiarCartaCatalogo(3)" type="button" id="fotoPezPayasoCatalogo" name="fotoPezPayasoCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaCarpaCatalogo" name="cartaCarpaCatalogo" class="cartaIndividualCatalogo CICFila1 CICColumna4">
+                    <div onclick="cambiarCartaCatalogo(4)" type="button" id="fotoCarpaCatalogo" name="fotoCarpaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaAnchoaCatalogo" name="cartaAnchoaCatalogo" class="cartaIndividualCatalogo CICFila1 CICColumna5">
+                    <div onclick="cambiarCartaCatalogo(5)" type="button" id="fotoAnchoaCatalogo" name="fotoAnchoaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaKoiCatalogo" name="cartaKoiCatalogo" class="cartaIndividualCatalogo CICFila2 CICColumna1">
+                    <div onclick="cambiarCartaCatalogo(6)" type="button" id="fotoKoiCatalogo" name="fotoKoiCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaGoldfishCatalogo" name="cartaGoldfishCatalogo" class="cartaIndividualCatalogo CICFila2 CICColumna2">
+                    <div onclick="cambiarCartaCatalogo(7)" type="button" id="fotoGoldfishCatalogo" name="fotoGoldfishCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaPezGloboCatalogo" name="cartaPezGloboCatalogo" class="cartaIndividualCatalogo CICFila2 CICColumna3">
+                    <div onclick="cambiarCartaCatalogo(8)" type="button" id="fotoPezGloboCatalogo" name="fotoPezGloboCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaAtunCatalogo" name="cartaAtunCatalogo" class="cartaIndividualCatalogo CICFila2 CICColumna4">
+                    <div onclick="cambiarCartaCatalogo(9)" type="button" id="fotoAtunCatalogo" name="fotoAtunCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaTetraNeonCatalogo" name="cartaTetraNeonCatalogo" class="cartaIndividualCatalogo CICFila2 CICColumna5">
+                    <div onclick="cambiarCartaCatalogo(10)" type="button" id="fotoTetraNeonCatalogo" name="fotoTetraNeonCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaTortugaCatalogo" name="cartaTortugaCatalogo" class="cartaIndividualCatalogo CICFila3 CICColumna1">
+                    <div onclick="cambiarCartaCatalogo(11)" type="button" id="fotoTortugaCatalogo" name="fotoTortugaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaRanaCatalogo" name="cartaRanaCatalogo" class="cartaIndividualCatalogo CICFila3 CICColumna2">
+                    <div onclick="cambiarCartaCatalogo(12)" type="button" id="fotoRanaCatalogo" name="fotoRanaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaTruchaCatalogo" name="cartaTruchaCatalogo" class="cartaIndividualCatalogo CICFila3 CICColumna3">
+                    <div onclick="cambiarCartaCatalogo(13)" type="button" id="fotoTruchaCatalogo" name="fotoTruchaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaBagreCatalogo" name="cartaBagreCatalogo" class="cartaIndividualCatalogo CICFila3 CICColumna4">
+                    <div onclick="cambiarCartaCatalogo(14)" type="button" id="fotoBagreCatalogo" name="fotoBagreCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaCangrejoRioCatalogo" name="cartaCangrejoRioCatalogo" class="cartaIndividualCatalogo CICFila3 CICColumna5">
+                    <div onclick="cambiarCartaCatalogo(15)" type="button" id="fotoCangrejoRioCatalogo" name="fotoCangrejoRioCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaSalmonCatalogo" name="cartaSalmonCatalogo" class="cartaIndividualCatalogo CICFila4 CICColumna1">
+                    <div onclick="cambiarCartaCatalogo(16)" type="button" id="fotoSalmonCatalogo" name="fotoSalmonCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaPezEspadaCatalogo" name="cartaPezEspadaCatalogo" class="cartaIndividualCatalogo CICFila4 CICColumna2">
+                    <div onclick="cambiarCartaCatalogo(17)" type="button" id="fotoPezEspadaCatalogo" name="fotoPezEspadaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaCharCatalogo" name="cartaCharCatalogo" class="cartaIndividualCatalogo CICFila4 CICColumna3">
+                    <div onclick="cambiarCartaCatalogo(18)" type="button" id="fotoCharCatalogo" name="fotoCharCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaMagikarpCatalogo" name="cartaMagikarpCatalogo" class="cartaIndividualCatalogo CICFila4 CICColumna4">
+                    <div onclick="cambiarCartaCatalogo(19)" type="button" id="fotoMagikarpCatalogo" name="fotoMagikarpCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaCangrejoCatalogo" name="cartaCangrejoCatalogo" class="cartaIndividualCatalogo CICFila4 CICColumna5">
+                    <div onclick="cambiarCartaCatalogo(20)" type="button" id="fotoCangrejoCatalogo" name="fotoCangrejoCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaEsturionCatalogo" name="cartaEsturionCatalogo" class="cartaIndividualCatalogo CICFila5 CICColumna1">
+                    <div onclick="cambiarCartaCatalogo(21)" type="button" id="fotoEsturionCatalogo" name="fotoEsturionCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaPiraniaCatalogo" name="cartaPiraniaCatalogo" class="cartaIndividualCatalogo CICFila5 CICColumna2">
+                    <div onclick="cambiarCartaCatalogo(22)" type="button" id="fotoPiraniaCatalogo" name="fotoPiraniaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaPezRapeCatalogo" name="cartaPezRapeCatalogo" class="cartaIndividualCatalogo CICFila5 CICColumna3">
+                    <div onclick="cambiarCartaCatalogo(23)" type="button" id="fotoPezRapeCatalogo" name="fotoPezRapeCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaCachaloteCatalogo" name="cartaCachaloteCatalogo" class="cartaIndividualCatalogo CICFila5 CICColumna4">
+                    <div onclick="cambiarCartaCatalogo(24)" type="button" id="fotoCachaloteCatalogo" name="fotoCachaloteCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaTiburonBlancoCatalogo" name="cartaTiburonBlancoCatalogo" class="cartaIndividualCatalogo CICFila5 CICColumna5">
+                    <div onclick="cambiarCartaCatalogo(25)" type="button" id="fotoTiburonBlancoCatalogo" name="fotoTiburonBlancoCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+                <div id="cartaBallenaAzulAntarticaCatalogo" name="cartaBallenaAzulAntarticaCatalogo" class="cartaIndividualCatalogo CICColumna3">
+                    <div onclick="cambiarCartaCatalogo(26)" type="button" id="fotoBallenaAzulAntarticaCatalogo" name="fotoBallenaAzulAntarticaCatalogo" class="fotoIndividualCatalogo"></div>
+                </div>
+            </div>
+            <div onclick="salirCatalogo()" type="button" id="botonSalirCatalogo" name="botonSalirCatalogo">x</div>
+        </div>
+    </form>
+    <form id="desbloqueo" name="desbloqueo"><!-- Texto del viejo Dick Tinieblas al conseguir todo -->
+        <div onclick="avanzarDesbloqueo()" type="button" id="dickDesbloqueo" name="dickDesbloqueo"></div>
+        <div id="burbujaDesbloqueo" name="burbujaDesbloqueo">
+            <p id="textoDesbloqueo" name="textoDesbloqueo"></p>
+        </div>
+    </form>
+    <form id="pantallaJefeFase2" name="pantallaJefeFase2"><!-- Juego contra el jefe en la fase 2 -->
+        <div id="tochoCanion" name="tocohCanion"></div>
+        <div onclick="jefeFase2Fallo()" type="button" id="cuadroFalloFase2" name="cuadroFalloFase2"></div>
+        <div type="button" id="jefeFase2" name="jefeFase2"></div>
+        <div id="vidaJugador" name="vidaJugador">
+            <div id="corazon1HP" name="corazon1HP" class="corazonVida"></div>
+            <div id="corazon2HP" name="corazon2HP" class="corazonVida"></div>
+            <div id="corazon3HP" name="corazon3HP" class="corazonVida"></div>
+            <div id="corazon4HP" name="corazon4HP" class="corazonVida"></div>
+            <div id="corazon5HP" name="corazon5HP" class="corazonVida"></div>
+        </div>
+        <div id="vidaJefe" name="vidaJefe"></div>
+        <div id="explosionDisparo" name="explosionDisparo"></div>
+    </form>
+    <form id="pantallaGameOver" name="pantallaGameOver"><!-- Pantalla de game over -->
+        <div onclick="salirPantallaGameOver()" type="button" id="botonGameOver" name="botonGameOver"><br>GAME OVER</div>
+    </form>
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+</body><!-- Archivos de lógica y funcionalidad -->
+</html>
