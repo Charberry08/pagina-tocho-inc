@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora Tocha</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel = "icon" href = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/GNOME_Calculator_icon_2021.svg/640px-GNOME_Calculator_icon_2021.svg.png" type = "image/x-icon">
+    </head>
+<body><!-- Audios -->
+    <audio loop id="musicaFondo" name="musicaFondo" src="audio/background_song.mp3"></audio>
+    <audio id="sonidoBoton" name="sonidoBoton" src="audio/click_sound.mp3"></audio>
+    <form><!-- Cuerpo de la calculadora y botones -->
+        <div id="cuerpoCalculadora" name="cuerpoCalculadora">
+            <button onclick="toggleMusica()" type="button" id="botonMusica" name="botonMusica">Music - OFF</button>
+            <br>
+            <input type="text" id="pantalla" name="pantalla" placeholder="0" disabled>
+            <div id="botones" name="botones">
+                <br>
+                <button onclick="eliminarPantalla()" type="button" id="accionAC" name="accionAC" class="boton accion">AC</button>
+                <button onclick="eliminarElemento()" type="button" id="accionDEL" name="accionDEL" class="boton accion">DEL</button>
+                <button onclick="operacion('/')" type="button" id="botonDivision" name="botonDivision" class="boton signo margenAlterno">÷</button>
+                <br>
+                <br>
+                <button onclick="insertarElemento('7')" type="button" id="boton7" name="boton7" class="boton numero">7</button>
+                <button onclick="insertarElemento('8')" type="button" id="boton8" name="boton8" class="boton numero margenBase">8</button>
+                <button onclick="insertarElemento('9')" type="button" id="boton9" name="boton9" class="boton numero margenBase">9</button>
+                <button onclick="operacion('*')" type="button" id="botonMultiplicacion" name="botonMutiplicacion" class="boton signo margenAlterno">x</button>
+                <br>
+                <br>
+                <button onclick="insertarElemento('4')" type="button" id="boton4" name="boton4" class="boton numero">4</button>
+                <button onclick="insertarElemento('5')" type="button" id="boton5" name="boton5" class="boton numero margenBase">5</button>
+                <button onclick="insertarElemento('6')" type="button" id="boton6" name="boton6" class="boton numero margenBase">6</button>
+                <button onclick="operacion('-')" type="button" id="botonResta" name="botonResta" class="boton signo margenAlterno">-</button>
+                <br>
+                <br>
+                <button onclick="insertarElemento('1')" type="button" id="boton1" name="boton1" class="boton numero">1</button>
+                <button onclick="insertarElemento('2')" type="button" id="boton2" name="boton2" class="boton numero margenBase">2</button>
+                <button onclick="insertarElemento('3')" type="button" id="boton3" name="boton3" class="boton numero margenBase">3</button>
+                <button onclick="operacion('+')" type="button" id="botonSuma" name="botonSuma" class="boton signo">+</button>
+                <br>
+                <br>
+                <button onclick="insertarElemento('0')" type="button" id="boton0" name="boton0" class="boton numero">0</button>
+                <button onclick="insertarElemento('.')" type="button" id="botonPunto" name="botonPunto" class="boton numero margenBase">·</button>
+                <button onclick="operacion('=')" type="button" id="botonIgual" name="botonIgual" class="boton signo margenBase">=</button>
+            </div>
+        </div>
+    </form>
+    <br><!-- Texto de trademark abajo de la página -->
+    <div id="trademarkText" name="trademarkText">
+        © Tocho Inc. Calculadora Tocha and Proyecto Tocho are trademarks of Tocho Inc.
+    </div><!-- Archivos de lógica -->
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]
+{
+    -moz-appearance: textfield;
+}
+body
+{
+    background-image:url(images/wood_background.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+}
+#cuerpoCalculadora
+{
+    float:center;
+    height:700px;
+    width:480px;
+    background:linear-gradient(rgb(200, 255, 217),cyan);
+    border-style:solid;
+    border-color:rgb(0, 145, 145);
+    border-radius:40px;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-width:12px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:auto;
+    margin-top:auto;
+}
+
+#botonMusica
+{
+    font-family: "Roboto", "Consolas";
+    position:relative;
+    top:20px;
+    left:40px;
+    font-style:italic;
+    font-family:"Roboto Slab", "Consolas";
+    background-color:rgb(255, 181, 84);
+    border-color:rgb(196, 152, 85);
+    border-style:solid;
+    border-radius:5px;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-width:2px;
+}
+#botonMusica:hover
+{
+    background-color:rgb(96, 221, 148);
+    border-color:rgb(76, 170, 115);
+}
+#botonMusica:active
+{
+    background-color:rgb(158, 255, 198);
+    border-color:rgb(140, 221, 173);
+}
+
+#pantalla
+{
+    border-color:rgb(73, 73, 73);
+    position:relative;
+    top:40px;
+    left:28px;
+    text-align:right;
+    background-color: lightgrey;
+    font-family: "Roboto", "Consolas";
+    font-size: 60px;
+    border-style:solid;
+    border-width:6px;
+    border-radius:10px;
+    width: 400px;
+    padding-right:12px;
+    color:rgb(80, 80, 80);
+}
+::placeholder
+{
+    color:rgb(80, 80, 80);
+}
+.boton
+{
+    position:relative;
+    top:60px;
+    left:28px;
+    color: white;
+    font-size: 40px;
+    border-style:solid;
+    border-radius:16px;
+    border-left:none;
+    border-right:none;
+    border-top:none;
+    border-width:6px;
+    padding:16px;
+}
+.numero
+{
+    background-color: rgb(48, 183, 236);
+    border-color:rgb(36, 133, 172);
+    width:80px;
+    height:80px;
+}
+.numero:hover
+{
+    background-color: rgb(40, 153, 197);
+    border-color:rgb(26, 96, 124);
+}
+.numero:active
+{
+    background-color: rgb(96, 208, 252);
+    border-color:rgb(81, 172, 207);
+}
+.signo
+{
+    background-color: rgb(255, 101, 73);
+    border-color:rgb(184, 70, 50);
+    width:80px;
+    height:80px;
+}
+.signo:hover
+{
+    background-color: rgb(206, 82, 60);
+    border-color:rgb(138, 52, 37);
+}
+.signo:active
+{
+    background-color: rgb(255, 148, 129);
+    border-color:rgb(209, 121, 105);
+}
+.accion
+{
+    background-color: rgb(101, 184, 94);
+    border-color:rgb(66, 121, 61);
+}
+.accion:hover
+{
+    background-color: rgb(73, 133, 68);
+    border-color:rgb(42, 78, 39);
+}
+.accion:active
+{
+    background-color: rgb(143, 212, 137);
+    border-color:rgb(99, 150, 94);
+}
+#accionAC
+{
+    width:160px;
+}
+#accionDEL
+{
+    width:160px;
+    margin-left:8px;
+}
+#botonDivision
+{
+    margin-left:9px;
+}
+.margenBase
+{
+    margin-left:30px;
+}
+.margenAlterno
+{
+    margin-left:33px;
+}
+#botonSuma
+{
+    float: right;
+    margin-right:55px;
+    height:180px;
+}
+#trademarkText
+{
+    text-align: center;
+    color:white;
+}
