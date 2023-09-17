@@ -18,14 +18,16 @@ body
 
 #botonPantallaNegra
 {
+    position:absolute;
     color:white;
     font-size: 100px;
     text-align: center;
     font-family: "Darumadrop One", "Consolas";
-    position:absolute;
     border:none;
-    width:90%;
-    height:90%;
+    width:40%;
+    left: 30%;
+    top: 30%;
+    height:40%;
     cursor:pointer;
 }
 
