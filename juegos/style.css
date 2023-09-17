@@ -123,7 +123,7 @@ nav ul li a:hover
     display: flex;
     align-items: center;
 }
-.col-2 .blog1_photo
+.col-2 .juego1_photo
 {
     width: 60%;
 }
@@ -196,7 +196,7 @@ nav ul li a:hover
     display: flex;
     align-items: center;
 }
-.col-4 .blog2_photo
+.col-4 .juego2_photo
 {
     width: 60%;
 }
@@ -283,7 +283,7 @@ nav ul li a:hover
         margin-bottom: 50px;
         left: 10%;
     }
-    .col-2 .blog1_photo
+    .col-2 .juego1_photo
     {
         width: 77%;
     }
@@ -315,7 +315,7 @@ nav ul li a:hover
         margin-bottom: 50px;
         left: 10%;
     }
-    .col-4 .blog2_photo
+    .col-4 .juego2_photo
     {
         width: 77%;
     }
