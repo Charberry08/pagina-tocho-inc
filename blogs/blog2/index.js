@@ -16,12 +16,10 @@ function toggleMenu()
 
 function tochoIncBarIconAction()
 {
-    window.location.reload();
+    window.location.href = "../../";
 }
 
-var blogNumber = 0;
-
-function readBlog(blogNumber)
+function returnPage()
 {
-    window.location.href = "/blogs/blog" + blogNumber + "/";
+    window.location.href = "../../";
 }

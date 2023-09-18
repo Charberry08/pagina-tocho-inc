@@ -74,142 +74,81 @@ nav ul li a:hover
 }
 .col-1
 {
-    flex-basis: 40%;
+    flex-basis: 90%;
     position: relative;
-    margin-left: 50px;
+    margin-left: 5%;
 }
 .col-1 h2
 {
+    text-align: center;
     color: #f8481c;
-    font-size: 54px;
+    font-size: 72px;
+}
+.col-1 .blog1_photo1
+{
+    position: relative;
+    margin: 20px 0 10px;
+    left: 25%;
+    width: 50%;
 }
 .col-1 h3
 {
-    font-size: 18px;
-    font-weight: 100;
-    margin: 20px 0 10px;
-}
-.col-1 p
-{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 100;
     margin: 20px 0 10px;
     line-height: 28px;
 }
-.col-1 h4
+.col-1 .blog_subtitle
 {
+    color: #f8481c;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    line-height: 40px;
+}
+.col-1 p
+{
+    font-size: 18px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    line-height: 28px;
+}
+.col-1 .blog1_video1
+{
+    position: relative;
+    margin: 20px 0 10px;
+    left: 30%;
+    width: 40%;
+}
+.col-1 .return_button
+{
+    float: right;
     color: #f8481c;
     margin: 30px 0;
     font-size: 20px;
     cursor: pointer;
     text-decoration: underline;
-    text-underline-offset: 4px;
+    text-underline-offset: 8px;
 }
 .col-1::after
 {
     content: '';
     width: 10px;
-    height: 80%;
+    height: 100%;
     background: linear-gradient(#f8481c, #f8ab1c);
     position: absolute;
     left: -40px;
     top: 8px;
 }
-.col-2
-{
-    left: 150px;
-    position: relative;
-    flex-basis: 60%;
-    display: flex;
-    align-items: center;
-}
-.col-2 .blog1_photo
-{
-    width: 60%;
-}
-.col-2 .color-box
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: linear-gradient(#f8481c, #f8ab1c);
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-
-.row-2
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 100px 0;
-}
-.col-3
-{
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 50px;
-}
-.col-3 h2
-{
-    color: #f8481c;
-    font-size: 54px;
-}
-.col-3 h3
-{
-    font-size: 18px;
-    font-weight: 100;
-    margin: 20px 0 10px;
-}
-.col-3 p
-{
-    font-size: 16px;
-    font-weight: 100;
-    margin: 20px 0 10px;
-    line-height: 28px;
-}
-.col-3 h4
-{
-    color: #f8481c;
-    margin: 30px 0;
-    font-size: 20px;
-    cursor: pointer;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
-.col-3::after
+.col-1::before
 {
     content: '';
     width: 10px;
-    height: 75%;
-    background: linear-gradient(#f8481c, #f8ab1c);
-    position: absolute;
-    left: -40px;
-    top: 8px;
-}
-.col-4
-{
-    left: 150px;
-    position: relative;
-    flex-basis: 60%;
-    display: flex;
-    align-items: center;
-}
-.col-4 .blog2_photo
-{
-    width: 60%;
-}
-.col-4 .color-box
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: linear-gradient(#f8481c, #f8ab1c);
     height: 100%;
-    width: 100%;
-    z-index: -1;
-    translate: -60%;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    position: absolute;
+    right: -40px;
+    top: 8px;
 }
 
 .copyright-text
@@ -287,62 +226,26 @@ nav ul li a:hover
         flex-direction: column-reverse;
         margin: 50px 0;
     }
-    .col-2
-    {
-        flex-basis: 100%;
-        margin-bottom: 50px;
-        left: 10%;
-    }
-    .col-2 .blog1_photo
-    {
-        width: 77%;
-    }
-    .col-1
-    {
-        flex-basis: 100%;
-    }
     .col-1 h2
     {
-        font-size: 35px;
+        font-size: 40px;
     }
-    .col-1 h3
+    .col-1 .blog1_photo1
     {
-        font-size: 15px;
-    }
-    .col-1 h4
-    {
-        font-size: 18px;
-    }
-
-    .row-2
-    {
-        flex-direction: column-reverse;
-        margin: 50px 0;
-    }
-    .col-4
-    {
-        flex-basis: 100%;
-        margin-bottom: 50px;
         left: 10%;
+        width: 80%;
     }
-    .col-4 .blog2_photo
+    .col-1 .blog1_video1
     {
-        width: 77%;
+        left: 15%;
+        width: 70%;
     }
-    .col-3
+    .col-1::after
     {
-        flex-basis: 100%;
+        display: none;
     }
-    .col-3 h2
+    .col-1::before
     {
-        font-size: 35px;
-    }
-    .col-3 h3
-    {
-        font-size: 15px;
-    }
-    .col-3 h4
-    {
-        font-size: 18px;
+        display: none;
     }
 }

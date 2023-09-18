@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocho Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = "../../images/logo_tocho.png" type = "image/x-icon">
+</head>
+<body>
+    <div class="upper-bar-background">
+        <div class="container">
+            <div class="navbar">
+                <img onclick="tochoIncBarIconAction()" class="tocho-inc-icon" type="button" src="../../images/logo_tocho_bar_icon.png"></img>
+                <nav>
+                    <ul id="menu-list">
+                        <li><a href="/../" class="bar-blog-button">Blog</a></li>
+                        <li><a href="/juegos/" class="bar-juegos-button">Juegos</a></li>
+                        <li><a href="/nosotros/" class="bar-nosotros-button">Nosotros</a></li>
+                        <li><a href="/otros/" class="bar-otros-button">Otros</a></li>
+                    </ul>
+                </nav>
+                <img onclick="toggleMenu()" class="menu-icon" type="button" src="../../images/menu-bar-icon.png">
+            </div>
+            <div class="row-1">
+                <div class="col-1">
+                    <h2>Nuevo juego en desarrollo</h2>
+                    <img src="images/blog2_photo1.png" class="blog1_photo1">
+                    <h3>Después del éxito que fue nuestro último video juego, Pesca Tocha, el desarrollo de una tercera
+                        entrega de la saga Proyecto Tocho ha dado inicio. Habrá más información publicada en las
+                        siguientes semanas.</h3>
+                    <h4 class="blog_subtitle">Más a fondo</h4>
+                    <p>El juego se encuentra bajo el nombre clave "TvB", y cuenta con más del doble de desarrolladores
+                        que los que tuvo Pesca Tocha. De igual manera, se espera que TvB sea una aplicación de
+                        escritorio que solo esté disponible para computadores personales con Windows, en comparación con
+                        su antecesor, el cual fué una aplicación web, y que incluso se podría llegar a jugar en un
+                        teléfono móvil, este tendrá algunas limitaciones para poder jugarse, las cuales lograrán que el
+                        juego sea mucho más estable y que llegue a un público más grande.<br><br>Se espera que el TvB
+                        sea lanzado a finales de 2023.<br><br>Por el momento no podemos revelar más información debido a
+                        que el juego acaba de entrar en sus primeras etapas de desarrollo, intentaremos brindarles
+                        actualizaciones lo antes posible.</p>
+                    <h4 onclick="returnPage()" type="button" class="return_button">Regresar</h4>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a class="social-icon" href="https://twitter.com/proyectotocho" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-twitter"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/proyectotocho/" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-instagram"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.youtube.com/@proyectotocho" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-youtube"></ion-icon>
+            </a>
+            <div class="copyright-text">
+                <p>Copyright © 2023 Tocho Inc.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
