@@ -212,6 +212,15 @@ nav ul li a:hover
     translate: -60%;
 }
 
+.copyright-text
+{
+    position: relative;
+    color: #f8481c;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    line-height: 28px;
+}
 .social-links .social-icon .social-icon-image
 {
     height: 25px;
