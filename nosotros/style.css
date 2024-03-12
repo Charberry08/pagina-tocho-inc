@@ -240,6 +240,123 @@ nav ul li a:hover
     z-index: -1;
 }
 
+.row-4
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-7
+{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-7 h2
+{
+    color: #f8481c;
+    font-size: 54px;
+}
+.col-7 p
+{
+    font-size: 16px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    line-height: 28px;
+}
+.col-7::after
+{
+    content: '';
+    width: 10px;
+    height: 83%;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-8
+{
+    left: 150px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-8 .kevin_hernandez_photo
+{
+    width: 60%;
+}
+.col-8 .color-box
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    translate: -60%;
+}
+
+.row-5
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-9
+{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-9 h2
+{
+    color: #f8481c;
+    font-size: 54px;
+}
+.col-9 p
+{
+    font-size: 16px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    line-height: 28px;
+}
+.col-9::after
+{
+    content: '';
+    width: 10px;
+    height: 86%;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-10
+{
+    left: 150px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-10 .sofia_photo
+{
+    width: 50%;
+}
+.col-10 .color-box
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .copyright-text
 {
     position: relative;
