@@ -84,7 +84,7 @@ nav ul li a:hover
     color: #f8481c;
     font-size: 72px;
 }
-.col-1 .blog1_photo1
+.col-1 .blog2_photo1
 {
     position: relative;
     margin: 20px 0 10px;
@@ -112,13 +112,6 @@ nav ul li a:hover
     font-weight: 100;
     margin: 20px 0 10px;
     line-height: 28px;
-}
-.col-1 .blog1_video1
-{
-    position: relative;
-    margin: 20px 0 10px;
-    left: 30%;
-    width: 40%;
 }
 .col-1 .return_button
 {
@@ -230,15 +223,10 @@ nav ul li a:hover
     {
         font-size: 40px;
     }
-    .col-1 .blog1_photo1
+    .col-1 .blog2_photo1
     {
         left: 10%;
         width: 80%;
-    }
-    .col-1 .blog1_video1
-    {
-        left: 15%;
-        width: 70%;
     }
     .col-1::after
     {
