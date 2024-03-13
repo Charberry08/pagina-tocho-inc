@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tocho Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../images/logo_tocho.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="upper-bar-background">
+        <div class="container">
+            <div class="navbar">
+                <img onclick="tochoIncBarIconAction()" class="tocho-inc-icon" type="button"
+                    src="../../images/logo_tocho_bar_icon.png"></img>
+                <nav>
+                    <ul id="menu-list">
+                        <li><a href="/../" class="bar-blog-button">Blog</a></li>
+                        <li><a href="/juegos/" class="bar-juegos-button">Juegos</a></li>
+                        <li><a href="/nosotros/" class="bar-nosotros-button">Nosotros</a></li>
+                        <li><a href="/otros/" class="bar-otros-button">Otros</a></li>
+                    </ul>
+                </nav>
+                <img onclick="toggleMenu()" class="menu-icon" type="button" src="../../images/menu-bar-icon.png">
+            </div>
+            <div class="row-1">
+                <div class="col-1">
+                    <h2>Lanzamiento de Tochos vs. Brokens</h2>
+                    <img src="images/blog3_photo1.png" class="blog3_photo1">
+                    <h3>El primer juego en Steam hecho por Tocho Inc. esta aquí.</h3>
+                    <h4 class="blog_subtitle">Más a fondo</h4>
+                    <p>Luego de 3 meses de desarrollo, Tochos vs. Brokens se lanzó globalmente en la plataforma de
+                        Steam. El juego cuenta con una aventura de un jugador en donde viajaras alrededor del mundo en
+                        un intento de detener el brote de Brokens. El juego cuenta con su Banda Sonora Original, y con
+                        gráficos jamás antes vistos en la saga Proyecto Tocho. Disponible ahora en PC.</p>
+                    <h4 onclick="returnPage()" type="button" class="return_button">Regresar</h4>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a class="social-icon" href="https://twitter.com/proyectotocho" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-twitter"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/proyectotocho/" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-instagram"></ion-icon>
+            </a>
+            <a class="social-icon" href="https://www.youtube.com/@proyectotocho" target="_blank">
+                <ion-icon class="social-icon-image" name="logo-youtube"></ion-icon>
+            </a>
+            <div class="copyright-text">
+                <p>Copyright © 2024 Tocho Inc.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
