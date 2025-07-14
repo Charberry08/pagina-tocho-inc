@@ -285,6 +285,80 @@ nav ul li a:hover
     z-index: -1;
 }
 
+.row-4
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-7
+{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-7 h2
+{
+    color: #f8481c;
+    font-size: 54px;
+}
+.col-7 h3
+{
+    font-size: 18px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+.col-7 p
+{
+    font-size: 16px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    line-height: 28px;
+}
+.col-7 a
+{
+    color: #f8481c;
+    margin: 30px 0;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.col-7::after
+{
+    content: '';
+    width: 10px;
+    height: 73%;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-8
+{
+    left: 150px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-8 .juego4_photo
+{
+    width: 60%;
+}
+.col-8 .color-box
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    translate: -60%;
+}
+
 .copyright-text
 {
     position: relative;
@@ -414,6 +488,70 @@ nav ul li a:hover
         font-size: 15px;
     }
     .col-3 h4
+    {
+        font-size: 18px;
+    }
+
+    .row-3
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-6
+    {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        left: 10%;
+    }
+    .col-6 .juego3_photo
+    {
+        width: 77%;
+    }
+    .col-5
+    {
+        flex-basis: 100%;
+    }
+    .col-5 h2
+    {
+        font-size: 35px;
+    }
+    .col-5 h3
+    {
+        font-size: 15px;
+    }
+    .col-5 a
+    {
+        font-size: 18px;
+    }
+
+    .row-4
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-8
+    {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        left: 10%;
+    }
+    .col-8 .juego4_photo
+    {
+        width: 77%;
+    }
+    .col-7
+    {
+        flex-basis: 100%;
+    }
+    .col-7 h2
+    {
+        font-size: 35px;
+    }
+    .col-7 h3
+    {
+        font-size: 15px;
+    }
+    .col-7 a
     {
         font-size: 18px;
     }
