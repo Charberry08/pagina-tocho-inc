@@ -83,7 +83,7 @@ function operacion(numP)// Función que realiza las operaciones
         setAnteriorIgual = true;
         if(document.getElementById("pantalla").value == "69420")
         {
-            window.location.href = "/juegos/pescaTocha/index.html";
+            window.location.href = "/juegos/pescaTocha/";
         }
     }
 }
