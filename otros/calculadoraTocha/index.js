@@ -81,6 +81,10 @@ function operacion(numP)// Función que realiza las operaciones
         setSegundoNumero = false;
         setOperacion = false;
         setAnteriorIgual = true;
+        if(document.getElementById("pantalla").value == "69420")
+        {
+            window.location.href = "/juegos/pescaTocha/index.html";
+        }
     }
 }
 
