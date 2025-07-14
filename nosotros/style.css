@@ -357,6 +357,123 @@ nav ul li a:hover
     z-index: -1;
 }
 
+.row-6
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-11
+{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-11 h2
+{
+    color: #f8481c;
+    font-size: 54px;
+}
+.col-11 p
+{
+    font-size: 16px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    line-height: 28px;
+}
+.col-11::after
+{
+    content: '';
+    width: 10px;
+    height: 83%;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-12
+{
+    left: 150px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-12 .erick_photo
+{
+    width: 60%;
+}
+.col-12 .color-box
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    translate: -60%;
+}
+
+.row-7
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-13
+{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-13 h2
+{
+    color: #f8481c;
+    font-size: 54px;
+}
+.col-13 p
+{
+    font-size: 16px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    line-height: 28px;
+}
+.col-13::after
+{
+    content: '';
+    width: 10px;
+    height: 86%;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-14
+{
+    left: 150px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-14 .jose_photo
+{
+    width: 50%;
+}
+.col-14 .color-box
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
 .copyright-text
 {
     position: relative;
@@ -495,6 +612,102 @@ nav ul li a:hover
         flex-basis: 100%;
     }
     .col-5 h2
+    {
+        font-size: 35px;
+    }
+
+    .row-4
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-8
+    {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        left: 10%;
+    }
+    .col-8 .kevin_hernandez_photo
+    {
+        width: 77%;
+    }
+    .col-7
+    {
+        flex-basis: 100%;
+    }
+    .col-7 h2
+    {
+        font-size: 35px;
+    }
+
+    .row-5
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-10
+    {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        left: 10%;
+    }
+    .col-10 .sofia_photo
+    {
+        width: 77%;
+    }
+    .col-9
+    {
+        flex-basis: 100%;
+    }
+    .col-9 h2
+    {
+        font-size: 35px;
+    }
+
+    .row-6
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-12
+    {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        left: 10%;
+    }
+    .col-12 .erick_photo
+    {
+        width: 77%;
+    }
+    .col-11
+    {
+        flex-basis: 100%;
+    }
+    .col-11 h2
+    {
+        font-size: 35px;
+    }
+
+    .row-7
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-14
+    {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        left: 10%;
+    }
+    .col-14 .jose_photo
+    {
+        width: 77%;
+    }
+    .col-13
+    {
+        flex-basis: 100%;
+    }
+    .col-13 h2
     {
         font-size: 35px;
     }
