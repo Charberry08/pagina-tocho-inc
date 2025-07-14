@@ -344,4 +344,36 @@ nav ul li a:hover
     {
         font-size: 18px;
     }
+
+    .row-3
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-6
+    {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        left: 10%;
+    }
+    .col-6 .tochino_photo
+    {
+        width: 77%;
+    }
+    .col-5
+    {
+        flex-basis: 100%;
+    }
+    .col-5 h2
+    {
+        font-size: 35px;
+    }
+    .col-5 h3
+    {
+        font-size: 15px;
+    }
+    .col-5 a
+    {
+        font-size: 18px;
+    }
 }
