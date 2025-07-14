@@ -474,6 +474,65 @@ nav ul li a:hover
     z-index: -1;
 }
 
+.row-8
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.col-15
+{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-15 h2
+{
+    color: #f8481c;
+    font-size: 54px;
+}
+.col-15 p
+{
+    font-size: 16px;
+    font-weight: 100;
+    margin: 20px 0 10px;
+    line-height: 28px;
+}
+.col-15::after
+{
+    content: '';
+    width: 10px;
+    height: 83%;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+.col-16
+{
+    left: 150px;
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-16 .alessandro_photo
+{
+    width: 60%;
+}
+.col-16 .color-box
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#f8481c, #f8ab1c);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    translate: -60%;
+}
+
 .copyright-text
 {
     position: relative;
@@ -708,6 +767,30 @@ nav ul li a:hover
         flex-basis: 100%;
     }
     .col-13 h2
+    {
+        font-size: 35px;
+    }
+
+    .row-8
+    {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-16
+    {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+        left: 10%;
+    }
+    .col-16 .alessandro_photo
+    {
+        width: 77%;
+    }
+    .col-15
+    {
+        flex-basis: 100%;
+    }
+    .col-15 h2
     {
         font-size: 35px;
     }
